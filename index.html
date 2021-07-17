@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky?!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Lucky Calculator</h2>
+            <h3>Let's check if you were <i>BORN</i> lucky</h3>
+        </header>
+    </div>
+    <section id="hero">
+        <div class="container">
+            <div class="input_data">
+                <input type="date"  id="user_birthday" placeholder="Enter your birthday">
+                <input type="number" id="user_lucky_number" placeholder="Enter your lucky number.">
+                <button id="btn" type="submit">Find Out.</button>
+            </div>
+        </div>
+        <div class="container">
+            <div id="loader">
+                <img src="./Images/loading.gif" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="output"></div>
+            <div id="lucky">
+                <img src="./Images/lucky.gif" alt="">
+            </div>
+            <div id="unlucky">
+                <img src="./Images/unlucky.gif" alt="">
+            </div>
+            <div id="invalid">
+                <img src="./Images/invalid.gif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------- -->
+    <script src="./app.js"></script>
+</body>
+</html>
