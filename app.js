@@ -3,8 +3,7 @@ const loader=document.querySelector("#loader")
 const lucky=document.querySelector("#lucky")
 const unlucky=document.querySelector("#unlucky")
 const invalid=document.querySelector("#invalid")
-
-
+const close_privacy=document.querySelector("#close_privacy")
 
 clicker.addEventListener("click",()=>{
     loader.style.display="block";
@@ -54,4 +53,18 @@ clicker.addEventListener("click",()=>{
         }
     },3000)
     
+})
+
+
+// to close privacy div
+close_privacy.addEventListener("click",(e)=>{
+    e.target.parentElement.parentElement.style.display='none';
+})
+
+// for smooth scroll
+let scroller=document.querySelector("#scroller")
+scroller.addEventListener("click",()=>{
+    $('html').animate({
+        scrollTop: $("#hero").offset().top
+    },50);
 })

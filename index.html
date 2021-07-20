@@ -7,16 +7,25 @@
     <title>Lucky?!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- below is for smooth scroll -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="container">
         <header>
-            <h2>Lucky Calculator</h2>
-            <h3>Let's check if you were <i>BORN</i> lucky</h3>
+            <h1>Lucky Calculator</h1>
+            <h2>Let's check if you were <strong>BORN</strong> lucky</h2>
+            <button id="scroller">Go find out</button>
         </header>
     </div>
-    <section id="hero">
+
+    <div id="hero">
         <div class="container">
+            <div id="policy_data">
+                <p><span id="privacy_heading">Privacy Notice <i class="fas fa-user-secret"></i></span> We are not storing your data.</p>
+                <div id="close_privacy"><i class="fas fa-times-circle"></i></div>
+            </div>
             <div class="input_data">
                 <input type="date"  id="user_birthday" placeholder="Enter your birthday">
                 <input type="number" id="user_lucky_number" placeholder="Enter your lucky number.">
@@ -40,8 +49,20 @@
                 <img src="./Images/invalid.gif" alt="">
             </div>
         </div>
-    </section>
-
+        <!-- footer -->
+        <footer>
+            <h3>Let's Connect</h3>
+            <div class="container">
+                <div id="social">
+                    <div><a href="https://twitter.com/Nikhil_Belide"  target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
+                    <div><a href="https://github.com/BelideNikhil" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/nikhilbelide/"  target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
+                </div>
+            </div>
+            <p>&#169; Nikhil Belide. Feel free to copy.</p>
+        </footer>
+        
+    </div>
     <!-- --------------------------------------- -->
     <script src="./app.js"></script>
 </body>
