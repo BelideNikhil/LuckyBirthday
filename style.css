@@ -55,7 +55,7 @@ header h2{
 }
 #loader img,#lucky img, #unlucky img, #invalid img{
     border-radius: 10px;
-    width: 300px;
+    width: 250px;
 }
 #hero{
     height: 100vh;
@@ -70,7 +70,7 @@ header h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 .input_data >*{
     margin-bottom: 15px;
@@ -100,13 +100,13 @@ header h2{
 }
 #close_privacy{
     position: absolute;
-    right: 20px;
+    right: 2rem;
     cursor: pointer;
 }
 
 .output{
     background: white;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -129,7 +129,14 @@ footer{
     margin: 20px;
 }
 
-
+@media screen and (max-width:500px){
+    #policy_data{
+        padding: 10px;
+    }
+    #close_privacy{
+        right: 5px;
+    }
+}
 
 
 
