@@ -17,6 +17,7 @@ body{
     text-align: center;
     background: rgb(154 201 198 / 65%);
     position: relative;
+    height: max-content;
 }
 ul{
     list-style: none;
@@ -55,7 +56,7 @@ header h2{
 }
 #loader img,#lucky img, #unlucky img, #invalid img{
     border-radius: 10px;
-    width: 250px;
+    width: 200px;
 }
 #hero{
     height: 100vh;
@@ -116,14 +117,15 @@ header h2{
     font-weight: 800;
 }
 footer{
+    margin: auto;
     width: 100%;
     position: absolute;
     bottom: 10px;
-    display: flex;
-    flex-direction: column;
+    left: 0;
 }
 #social{
     display: flex;
+    justify-content: center;
 }
 #social >div{
     margin: 20px;
