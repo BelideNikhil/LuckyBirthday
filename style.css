@@ -16,8 +16,6 @@ body{
     line-height: 1.6rem;
     text-align: center;
     background: rgb(154 201 198 / 65%);
-    position: relative;
-    height: max-content;
 }
 ul{
     list-style: none;
@@ -59,7 +57,7 @@ header h2{
     width: 200px;
 }
 #hero{
-    height: 100vh;
+    min-height: 90vh;
 }
 .container .input_data{
     margin: auto;
@@ -119,7 +117,6 @@ header h2{
 footer{
     margin: auto;
     width: 100%;
-    position: absolute;
     bottom: 10px;
     left: 0;
 }
